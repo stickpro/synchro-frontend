@@ -1,0 +1,107 @@
+// MAIN
+html,
+body {
+  font-family: $font-name1;
+}
+a {
+  color: $hvr;
+  font-size: 14px;
+  ::hover {
+    color: $blk;
+    text-decoration: none;
+  }
+}
+//BASE
+.d-flex {
+  display: f;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.no-padding {
+  padding: 0 !important;
+}
+
+// HEADER
+.header {
+  background-color: $blk;
+  .container-fluid {
+    padding: 0 71px;
+  }
+  &__logo {
+    display: flex;
+    align-content: center;
+    height: 48px;
+    margin-right: 3.5rem;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    &-section {
+      display: flex;
+      align-items: center;
+    }
+    &-item {
+      font-size: $fs14;
+      &-menu {
+        display: flex;
+        li {
+          padding: 5px 12px;
+        }
+      }
+      &-phone {
+        display: block;
+        background-color: $dark;
+        height: 100%;
+        padding: 6px 30px;
+        text-align: center;
+        a {
+          color: $wht;
+          font-family: inherit;
+          font-weight: 500;
+          font-size: $fs16;
+        }
+        .span {
+          color: $hvr;
+          font-size: $fs12;
+          line-height: $fs14;
+          font-weight: 300;
+        }
+      }
+    }
+    &-item + &-item-phone {
+      margin-left: 16px;
+    }
+    &-item + &-item {
+      margin-left: 24px;
+    }
+  }
+}
+// MENU
+.menu {
+  width: 100%;
+  &__section {
+    &-btn {
+      padding: 18px 49px;
+      background-color: $yel;
+      font-weight: 500;
+      &-icon {
+        margin-right: 1rem;
+      }
+    }
+    &-search {
+      flex-grow: 1;
+      height: 100%;
+    }
+    
+  }
+  &__search {
+    height: 100%;
+    &-input {
+      width: 100%;
+      padding: 1.125rem 0 1rem 2.875rem;
+      border: 0;
+    }
+  }
+}
