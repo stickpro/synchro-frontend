@@ -24,9 +24,6 @@ a {
 .no-padding {
   padding: 0 !important;
 }
-.container-fluid {
-  padding: 0 3.5rem;
-}
 // BUTTON
 .btn-default {
   background: $blk;
@@ -43,14 +40,13 @@ a {
     color: $blk;
   }
 }
-.btn-link {
-  color: $yel;
-  font-weight: 500;
-}
 
 // HEADER
 .header {
   background-color: $blk;
+  .container-fluid {
+    padding: 0 71px;
+  }
   &__logo {
     display: flex;
     align-content: center;
@@ -104,9 +100,6 @@ a {
 // MENU
 .menu {
   width: 100%;
-  .row {
-    margin: 0;
-  }
   &__section {
     &-btn {
       padding: 18px 49px;
@@ -123,15 +116,6 @@ a {
   }
   &__search {
     height: 100%;
-    &::before {
-      content: "";
-      width: 1rem;
-      height: 1rem;
-      position: absolute;
-      top: 4.2rem;
-      margin-left: 1rem;
-      background: url("/assets/img/icon/search.svg") center no-repeat;
-    }
     &-input {
       width: 100%;
       padding: 1.125rem 0 1.125rem 2.875rem;
@@ -141,7 +125,7 @@ a {
   &__dropdown {
     padding: 1rem 2rem;
     position: absolute;
-    z-index: 999;
+    z-index: 100;
     background: $wht;
     box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.03);
     &-menu {
@@ -175,16 +159,8 @@ a {
     }
   }
 }
-//slider
 .slider {
   padding-top: 35px;
-  overflow: hidden;
-  &__slider {
-    padding: 0;
-    &:first-child {
-      padding-right: 1rem;
-    }
-  }
   .swiper__slide {
     display: block;
     background: $wht;
@@ -220,77 +196,19 @@ a {
       left: 3rem;
       bottom: 3rem;
     }
-    &-prev,
-    &-next {
+    &-prev, &-next {
+      background: $lig;
       position: absolute;
       bottom: 3rem;
       width: 3rem;
       height: 3rem;
-      z-index: 1;
     }
     &-prev {
       right: 6.2rem;
-      background: url("/assets/img/icon/arrow.svg") center no-repeat $lig;
     }
     &-next {
+      background: $lig;
       right: 3rem;
-      transform: rotate(180deg);
-      background: url("/assets/img/icon/arrow.svg") center no-repeat $lig;
-    }
-  }
-  &__delivery,
-  &__repair {
-    height: 220px;
-    padding: 1.625rem 2rem;
-    &-title {
-      font-weight: 500;
-      font-size: $fs24;
-      margin-bottom: 1rem;
-    }
-    &-sub {
-      font-weight: 300;
-      font-size: 1.125rem;
-      line-height: 24px;
-      margin-bottom: 4rem;
-    }
-  }
-  &__delivery {
-    margin-bottom: 1rem;
-    background: url("/assets/img/delivery.png") right 10px bottom no-repeat $wht;
-    .btn-link {
-      &::before {
-        content: "";
-        width: 1rem;
-        height: 1rem;
-        position: absolute;
-        left: 7.5rem;
-        background: url("/assets/img/icon/long-arrow.svg") center no-repeat;
-        filter: invert(81%) sepia(52%) saturate(745%) hue-rotate(324deg) brightness(100%) contrast(93%);
-      }
-      &:hover {
-        &::before {
-          filter: none;
-        }
-      }
-    }
-  }
-  &__repair {
-    background: url("/assets/img/repair.png") right 25px bottom no-repeat $wht;
-    .btn-link {
-      &::before {
-        content: "";
-        width: 1rem;
-        height: 1rem;
-        left: 7.5rem;
-        position: absolute;
-        background: url("/assets/img/icon/long-arrow.svg") center no-repeat;
-        filter: invert(81%) sepia(52%) saturate(745%) hue-rotate(324deg) brightness(100%) contrast(93%);
-      }
-      &:hover {
-        &::before {
-          filter: none;
-        }
-      }
     }
   }
 }

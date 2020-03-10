@@ -7,8 +7,8 @@
             <div class="header__top-item header__logo">
               <img src="@/assets/img/logo.svg" alt />
             </div>
-            <ul v-if="menu" class="header__top-item header__top-item-menu">
-              <li v-for="item in menu" :key="item">
+            <ul v-if="menuTop" class="header__top-item header__top-item-menu">
+              <li v-for="item in menuTop">
                 <a href="index.href">{{ item.title }}</a>
               </li>
             </ul>
@@ -41,7 +41,7 @@ import '@/assets/img/logo.svg'
 export default {
   data() {
     return {
-      menu: [
+      menuTop: [
         { href: '#', title: 'Сотрудничество' },
         { href: '#', title: 'О компании' },
         { href: '#', title: 'Доставка' },
