@@ -24,12 +24,15 @@ export default {
    ** Global CSS
    */
   css: [
-    '@/assets/scss/app.scss' // use our build, as entered via app.scss
+    '@/assets/scss/app.scss', // use our build, as entered via app.scss
+    'swiper/dist/css/swiper.css'
   ],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '@/plugins/vue-svg-icon', mode: 'client' }],
+  plugins: [
+    { src: '@/plugins/vue-svg-icon', mode: 'true' },
+    { src: '@/plugins/swiper.js', ssr: true, mode: 'client' },],
   /*
    ** Nuxt.js dev-modules
    */

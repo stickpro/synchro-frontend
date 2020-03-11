@@ -48,8 +48,10 @@ $wht_color: #ffffff;
 $hvr_color: #c2c2c2;
 $lig_color: #f2f2f2;
 $yel_color: #f5b14a;
-
+$gray_color: #B9B9B9;
 $dark_color: #1F1F1F;
+$backgroudn_color: #F9F9F9;
+$yellow_color: #ECA63F;
 
 // COLORS
 $blk:    rgba($blk_color,1);
@@ -185,6 +187,71 @@ $dark_85: rgba($dark_color,0.85);
 $dark_90: rgba($dark_color,0.9);
 $dark_95: rgba($dark_color,0.95);
 
+$gray:    rgba($gray_color,1);
+$gray_00: rgba($gray_color,0);
+$gray_05: rgba($gray_color,0.05);
+$gray_10: rgba($gray_color,0.1);
+$gray_15: rgba($gray_color,0.15);
+$gray_20: rgba($gray_color,0.2);
+$gray_25: rgba($gray_color,0.25);
+$gray_30: rgba($gray_color,0.3);
+$gray_35: rgba($gray_color,0.35);
+$gray_40: rgba($gray_color,0.4);
+$gray_45: rgba($gray_color,0.45);
+$gray_50: rgba($gray_color,0.5);
+$gray_55: rgba($gray_color,0.55);
+$gray_60: rgba($gray_color,0.6);
+$gray_65: rgba($gray_color,0.65);
+$gray_70: rgba($gray_color,0.7);
+$gray_75: rgba($gray_color,0.75);
+$gray_80: rgba($gray_color,0.8);
+$gray_85: rgba($gray_color,0.85);
+$gray_90: rgba($gray_color,0.9);
+$gray_95: rgba($gray_color,0.95);
+
+$backgroudn:    rgba($backgroudn_color,1);
+$backgroudn_00: rgba($backgroudn_color,0);
+$backgroudn_05: rgba($backgroudn_color,0.05);
+$backgroudn_10: rgba($backgroudn_color,0.1);
+$backgroudn_15: rgba($backgroudn_color,0.15);
+$backgroudn_20: rgba($backgroudn_color,0.2);
+$backgroudn_25: rgba($backgroudn_color,0.25);
+$backgroudn_30: rgba($backgroudn_color,0.3);
+$backgroudn_35: rgba($backgroudn_color,0.35);
+$backgroudn_40: rgba($backgroudn_color,0.4);
+$backgroudn_45: rgba($backgroudn_color,0.45);
+$backgroudn_50: rgba($backgroudn_color,0.5);
+$backgroudn_55: rgba($backgroudn_color,0.55);
+$backgroudn_60: rgba($backgroudn_color,0.6);
+$backgroudn_65: rgba($backgroudn_color,0.65);
+$backgroudn_70: rgba($backgroudn_color,0.7);
+$backgroudn_75: rgba($backgroudn_color,0.75);
+$backgroudn_80: rgba($backgroudn_color,0.8);
+$backgroudn_85: rgba($backgroudn_color,0.85);
+$backgroudn_90: rgba($backgroudn_color,0.9);
+$backgroudn_95: rgba($backgroudn_color,0.95);
+
+$yellow:    rgba($yellow_color,1);
+$yellow_00: rgba($yellow_color,0);
+$yellow_05: rgba($yellow_color,0.05);
+$yellow_10: rgba($yellow_color,0.1);
+$yellow_15: rgba($yellow_color,0.15);
+$yellow_20: rgba($yellow_color,0.2);
+$yellow_25: rgba($yellow_color,0.25);
+$yellow_30: rgba($yellow_color,0.3);
+$yellow_35: rgba($yellow_color,0.35);
+$yellow_40: rgba($yellow_color,0.4);
+$yellow_45: rgba($yellow_color,0.45);
+$yellow_50: rgba($yellow_color,0.5);
+$yellow_55: rgba($yellow_color,0.55);
+$yellow_60: rgba($yellow_color,0.6);
+$yellow_65: rgba($yellow_color,0.65);
+$yellow_70: rgba($yellow_color,0.7);
+$yellow_75: rgba($yellow_color,0.75);
+$yellow_80: rgba($yellow_color,0.8);
+$yellow_85: rgba($yellow_color,0.85);
+$yellow_90: rgba($yellow_color,0.9);
+$yellow_95: rgba($yellow_color,0.95);
 
 // Required
 @import "node_modules/bootstrap/scss/functions";
@@ -201,4 +268,5 @@ $dark_95: rgba($dark_color,0.95);
 // All
 @import "particles/reset";
 @import "particles/font";
+@import "particles/media";
 @import "particles/design";

@@ -1,0 +1,271 @@
+
+// Option A: Include all of Bootstrap
+
+// Customizations
+$body-bg: #fff;
+
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1440px
+) !default;
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1328px
+) !default;
+
+
+$fs10: 0.625rem;
+$fs12: 0.75rem;
+$fs14: 0.875rem;
+$fs16: 1rem ;
+$fs18: 1.125rem;
+$fs20: 1.25rem;
+$fs24: 1.5rem;
+$fs30: 1.875rem;
+$fs32: 2rem;
+
+//COLOR
+
+$blk_color: #292929;
+$wht_color: #ffffff;
+$hvr_color: #c2c2c2;
+$lig_color: #f2f2f2;
+$yel_color: #f5b14a;
+$gray_color: #B9B9B9;
+$dark_color: #1F1F1F;
+$backgroudn_color: #F9F9F9;
+$yellow_color: #ECA63F;
+
+// COLORS
+$blk:    rgba($blk_color,1);
+$blk_00: rgba($blk_color,0);
+$blk_05: rgba($blk_color,0.05);
+$blk_10: rgba($blk_color,0.1);
+$blk_15: rgba($blk_color,0.15);
+$blk_20: rgba($blk_color,0.2);
+$blk_25: rgba($blk_color,0.25);
+$blk_30: rgba($blk_color,0.3);
+$blk_35: rgba($blk_color,0.35);
+$blk_40: rgba($blk_color,0.4);
+$blk_45: rgba($blk_color,0.45);
+$blk_50: rgba($blk_color,0.5);
+$blk_55: rgba($blk_color,0.55);
+$blk_60: rgba($blk_color,0.6);
+$blk_65: rgba($blk_color,0.65);
+$blk_70: rgba($blk_color,0.7);
+$blk_75: rgba($blk_color,0.75);
+$blk_80: rgba($blk_color,0.8);
+$blk_85: rgba($blk_color,0.85);
+$blk_90: rgba($blk_color,0.9);
+$blk_95: rgba($blk_color,0.95);
+
+$wht:    rgba($wht_color,1);
+$wht_00: rgba($wht_color,0);
+$wht_01: rgba($wht_color,0.01);
+$wht_05: rgba($wht_color,0.05);
+$wht_10: rgba($wht_color,0.1);
+$wht_15: rgba($wht_color,0.15);
+$wht_20: rgba($wht_color,0.2);
+$wht_25: rgba($wht_color,0.25);
+$wht_30: rgba($wht_color,0.3);
+$wht_35: rgba($wht_color,0.35);
+$wht_40: rgba($wht_color,0.4);
+$wht_45: rgba($wht_color,0.45);
+$wht_50: rgba($wht_color,0.5);
+$wht_55: rgba($wht_color,0.55);
+$wht_60: rgba($wht_color,0.6);
+$wht_65: rgba($wht_color,0.65);
+$wht_70: rgba($wht_color,0.7);
+$wht_75: rgba($wht_color,0.75);
+$wht_80: rgba($wht_color,0.8);
+$wht_85: rgba($wht_color,0.85);
+$wht_90: rgba($wht_color,0.9);
+$wht_95: rgba($wht_color,0.95);
+
+$hvr:    rgba($hvr_color,1);
+$hvr_00: rgba($hvr_color,0);
+$hvr_05: rgba($hvr_color,0.05);
+$hvr_10: rgba($hvr_color,0.1);
+$hvr_15: rgba($hvr_color,0.15);
+$hvr_20: rgba($hvr_color,0.2);
+$hvr_25: rgba($hvr_color,0.25);
+$hvr_30: rgba($hvr_color,0.3);
+$hvr_35: rgba($hvr_color,0.35);
+$hvr_40: rgba($hvr_color,0.4);
+$hvr_45: rgba($hvr_color,0.45);
+$hvr_50: rgba($hvr_color,0.5);
+$hvr_55: rgba($hvr_color,0.55);
+$hvr_60: rgba($hvr_color,0.6);
+$hvr_65: rgba($hvr_color,0.65);
+$hvr_70: rgba($hvr_color,0.7);
+$hvr_75: rgba($hvr_color,0.75);
+$hvr_80: rgba($hvr_color,0.8);
+$hvr_85: rgba($hvr_color,0.85);
+$hvr_90: rgba($hvr_color,0.9);
+$hvr_95: rgba($hvr_color,0.95);
+
+$lig:    rgba($lig_color,1);
+$lig_00: rgba($lig_color,0);
+$lig_05: rgba($lig_color,0.05);
+$lig_10: rgba($lig_color,0.1);
+$lig_15: rgba($lig_color,0.15);
+$lig_20: rgba($lig_color,0.2);
+$lig_25: rgba($lig_color,0.25);
+$lig_30: rgba($lig_color,0.3);
+$lig_35: rgba($lig_color,0.35);
+$lig_40: rgba($lig_color,0.4);
+$lig_45: rgba($lig_color,0.45);
+$lig_50: rgba($lig_color,0.5);
+$lig_55: rgba($lig_color,0.55);
+$lig_60: rgba($lig_color,0.6);
+$lig_65: rgba($lig_color,0.65);
+$lig_70: rgba($lig_color,0.7);
+$lig_75: rgba($lig_color,0.75);
+$lig_80: rgba($lig_color,0.8);
+$lig_85: rgba($lig_color,0.85);
+$lig_90: rgba($lig_color,0.9);
+$lig_95: rgba($lig_color,0.95);
+
+$yel:    rgba($yel_color,1);
+$yel_00: rgba($yel_color,0);
+$yel_05: rgba($yel_color,0.05);
+$yel_10: rgba($yel_color,0.1);
+$yel_15: rgba($yel_color,0.15);
+$yel_20: rgba($yel_color,0.2);
+$yel_25: rgba($yel_color,0.25);
+$yel_30: rgba($yel_color,0.3);
+$yel_35: rgba($yel_color,0.35);
+$yel_40: rgba($yel_color,0.4);
+$yel_45: rgba($yel_color,0.45);
+$yel_50: rgba($yel_color,0.5);
+$yel_55: rgba($yel_color,0.55);
+$yel_60: rgba($yel_color,0.6);
+$yel_65: rgba($yel_color,0.65);
+$yel_70: rgba($yel_color,0.7);
+$yel_75: rgba($yel_color,0.75);
+$yel_80: rgba($yel_color,0.8);
+$yel_85: rgba($yel_color,0.85);
+$yel_90: rgba($yel_color,0.9);
+$yel_95: rgba($yel_color,0.95);
+
+$dark:    rgba($dark_color,1);
+$dark_00: rgba($dark_color,0);
+$dark_05: rgba($dark_color,0.05);
+$dark_10: rgba($dark_color,0.1);
+$dark_15: rgba($dark_color,0.15);
+$dark_20: rgba($dark_color,0.2);
+$dark_25: rgba($dark_color,0.25);
+$dark_30: rgba($dark_color,0.3);
+$dark_35: rgba($dark_color,0.35);
+$dark_40: rgba($dark_color,0.4);
+$dark_45: rgba($dark_color,0.45);
+$dark_50: rgba($dark_color,0.5);
+$dark_55: rgba($dark_color,0.55);
+$dark_60: rgba($dark_color,0.6);
+$dark_65: rgba($dark_color,0.65);
+$dark_70: rgba($dark_color,0.7);
+$dark_75: rgba($dark_color,0.75);
+$dark_80: rgba($dark_color,0.8);
+$dark_85: rgba($dark_color,0.85);
+$dark_90: rgba($dark_color,0.9);
+$dark_95: rgba($dark_color,0.95);
+
+$gray:    rgba($gray_color,1);
+$gray_00: rgba($gray_color,0);
+$gray_05: rgba($gray_color,0.05);
+$gray_10: rgba($gray_color,0.1);
+$gray_15: rgba($gray_color,0.15);
+$gray_20: rgba($gray_color,0.2);
+$gray_25: rgba($gray_color,0.25);
+$gray_30: rgba($gray_color,0.3);
+$gray_35: rgba($gray_color,0.35);
+$gray_40: rgba($gray_color,0.4);
+$gray_45: rgba($gray_color,0.45);
+$gray_50: rgba($gray_color,0.5);
+$gray_55: rgba($gray_color,0.55);
+$gray_60: rgba($gray_color,0.6);
+$gray_65: rgba($gray_color,0.65);
+$gray_70: rgba($gray_color,0.7);
+$gray_75: rgba($gray_color,0.75);
+$gray_80: rgba($gray_color,0.8);
+$gray_85: rgba($gray_color,0.85);
+$gray_90: rgba($gray_color,0.9);
+$gray_95: rgba($gray_color,0.95);
+
+$backgroudn:    rgba($backgroudn_color,1);
+$backgroudn_00: rgba($backgroudn_color,0);
+$backgroudn_05: rgba($backgroudn_color,0.05);
+$backgroudn_10: rgba($backgroudn_color,0.1);
+$backgroudn_15: rgba($backgroudn_color,0.15);
+$backgroudn_20: rgba($backgroudn_color,0.2);
+$backgroudn_25: rgba($backgroudn_color,0.25);
+$backgroudn_30: rgba($backgroudn_color,0.3);
+$backgroudn_35: rgba($backgroudn_color,0.35);
+$backgroudn_40: rgba($backgroudn_color,0.4);
+$backgroudn_45: rgba($backgroudn_color,0.45);
+$backgroudn_50: rgba($backgroudn_color,0.5);
+$backgroudn_55: rgba($backgroudn_color,0.55);
+$backgroudn_60: rgba($backgroudn_color,0.6);
+$backgroudn_65: rgba($backgroudn_color,0.65);
+$backgroudn_70: rgba($backgroudn_color,0.7);
+$backgroudn_75: rgba($backgroudn_color,0.75);
+$backgroudn_80: rgba($backgroudn_color,0.8);
+$backgroudn_85: rgba($backgroudn_color,0.85);
+$backgroudn_90: rgba($backgroudn_color,0.9);
+$backgroudn_95: rgba($backgroudn_color,0.95);
+
+$yellow:    rgba($yellow_color,1);
+$yellow_00: rgba($yellow_color,0);
+$yellow_05: rgba($yellow_color,0.05);
+$yellow_10: rgba($yellow_color,0.1);
+$yellow_15: rgba($yellow_color,0.15);
+$yellow_20: rgba($yellow_color,0.2);
+$yellow_25: rgba($yellow_color,0.25);
+$yellow_30: rgba($yellow_color,0.3);
+$yellow_35: rgba($yellow_color,0.35);
+$yellow_40: rgba($yellow_color,0.4);
+$yellow_45: rgba($yellow_color,0.45);
+$yellow_50: rgba($yellow_color,0.5);
+$yellow_55: rgba($yellow_color,0.55);
+$yellow_60: rgba($yellow_color,0.6);
+$yellow_65: rgba($yellow_color,0.65);
+$yellow_70: rgba($yellow_color,0.7);
+$yellow_75: rgba($yellow_color,0.75);
+$yellow_80: rgba($yellow_color,0.8);
+$yellow_85: rgba($yellow_color,0.85);
+$yellow_90: rgba($yellow_color,0.9);
+$yellow_95: rgba($yellow_color,0.95);
+
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+// Optional
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/code";
+@import "node_modules/bootstrap/scss/grid";
+
+// All
+@import "particles/reset";
+@import "particles/font";
+@import "particles/design";

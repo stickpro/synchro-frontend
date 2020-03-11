@@ -14,9 +14,7 @@ export default {
   components: { LayoutHeader, Menu },
   data() {
     return {
-      drawer: false,
-      title: 'Console',
-      snackbar: true
+      title: 'Synhro',
     }
   },
   methods: {}
