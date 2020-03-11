@@ -1,5 +1,6 @@
 /* eslint-disable */
 require('./arrow')
+require('./button-cart')
 require('./cart')
 require('./catalog')
 require('./close')

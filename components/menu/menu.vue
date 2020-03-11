@@ -18,7 +18,6 @@
           </div>
         </div>
       </div>
-      <transition name="fade">
       <div class="row" v-show="show">
         <div class="menu__dropdown">
           <ul class="menu__dropdown-menu">
@@ -33,7 +32,6 @@
           </ul>
         </div>
       </div>
-      </transition>
     </div>
   </section>
 </template>

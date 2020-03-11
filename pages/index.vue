@@ -27,8 +27,11 @@
         </div>
       </div>
     </section>
-    <section class="futured">
+    <section class="futured-product">
       <FuturedProduct />
+    </section>
+    <section class="brand">
+      <Brand />
     </section>
   </div>
 </template>
@@ -38,9 +41,9 @@ import '@/static/assets/img/icon/bundle/'
 
 import Slider from '@/components/slider/slider'
 import FuturedProduct from '@/components/futured-product/futured-product'
-
+import Brand from '@/components/brand/brand.vue'
 export default {
-  components: { Slider, FuturedProduct },
+  components: { Slider, FuturedProduct, Brand },
   data() {
     return {
       drawer: false,
