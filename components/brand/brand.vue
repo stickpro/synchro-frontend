@@ -3,7 +3,7 @@
     <div class="brand__title normal-title">Товары по брендам</div>
     <div class="row">
       <div class="brand__grid">
-        <section class="brand__item span" v-for="brand in brands" v-if="brands">
+        <section class="brand__item" v-for="brand in brands" v-if="brands">
           <div class="brand__item-info">
             <a :href="brand.link" class="brand__item-link">
               <img :src="brand.img" alt />
@@ -43,7 +43,7 @@ export default {
         { link: '#', img: '/assets/temp/brand/Group_23.png' },
         { link: '#', img: '/assets/temp/brand/Group_24.png' },
         { link: '#', img: '/assets/temp/brand/Group_25.png' },
-        { link: '#', img: '/assets/temp/brand/Group_26.png' }
+        { link: '#', img: '/assets/temp/brand/Group_26.png' },
       ]
     }
   }
