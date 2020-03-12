@@ -364,19 +364,26 @@ a {
 .brand {
   margin-top: 3.5rem;
   &__title {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
   &__grid {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(144px, 208px));
     grid-gap: 1rem;
+    width: 100%;
+  }
+}
 
-    @media ($desktop-lg) {
-      grid-template-columns: repeat(6, 1fr);
-    }
-    @media ($desktop-lg-min) {
-      grid-template-columns: repeat(7, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-    }
+// html
+.html {
+  margin-top: 3.5rem;
+  margin-bottom: 6rem;
+  &__title {
+    margin-bottom: 1.5rem;
+  }
+  &__info {
+    font-size: $fs16;
+    font-weight: 300;
+    line-height: 1.5rem;
   }
 }

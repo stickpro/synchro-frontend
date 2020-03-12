@@ -41,19 +41,18 @@ export default {
       swiperOption: {
         slidesPerView: 8,
         spaceBetween: 16,
-        observer: true,
+        slidesPerGroup: 3,
         loop: true,
-        observeParents: true,
-        grabCursor: true,
+        loopFillGroupWithBlank: true,
         breakpoints: {
           1440: {
-            slidesPerView: 6,
+            slidesPerView: 6
           },
           767: {
-            slidesPerView: 'auto',
+            slidesPerView: 'auto'
           },
           479: {
-            slidesPerView: 2,
+            slidesPerView: 2
           }
         }
       },
@@ -107,12 +106,44 @@ export default {
           price: '10 211'
         },
         {
-          name: "Joe's Sticky Stuff - 1/2\" x 65'",
+          name: 'URSA Strap Thigh (Крепеж для бедра)',
           href: '#',
-          category: 'Расходные материалы',
+          category: 'Звук',
+          category_href: '#',
+          img: '/assets/temp/product/image.png',
+          price: '2911'
+        },
+        {
+          name: 'ARRI Controlled Lens Motor CLM-4 Basic Set',
+          href: '#',
+          category: 'Оптика / аксессуары',
+          category_href: '#',
+          img: '/assets/temp/product/image1.png',
+          price: null
+        },
+        {
+          name: 'ARRI Controlled Lens Motor CLM-5 Basic Set',
+          href: '#',
+          category: 'Оптика / аксессуары',
+          category_href: '#',
+          img: '/assets/temp/product/image2.png',
+          price: null
+        },
+        {
+          name: 'ARRI cmotion pan-bar zoom',
+          href: '#',
+          category: 'Оптика / аксессуары',
+          category_href: '#',
+          img: '/assets/temp/product/image3.png',
+          price: '2911'
+        },
+        {
+          name: 'URSA soft strip rolls',
+          href: '#',
+          category: 'Звук',
           category_href: '#',
           img: '/assets/temp/product/image4.png',
-          price: '10 211'
+          price: '3125'
         },
         {
           name: "Joe's Sticky Stuff - 1/2\" x 65'",
@@ -121,7 +152,8 @@ export default {
           category_href: '#',
           img: '/assets/temp/product/image4.png',
           price: '10 211'
-        }
+        },
+        
       ]
     }
   }
