@@ -1,4 +1,5 @@
 <template>
+  <section class="brand">
   <div class="container-fluid">
     <div class="brand__title normal-title">Товары по брендам</div>
     <div class="row">
@@ -13,6 +14,7 @@
       </div>
     </div>
   </div>
+  </section>
 </template>
 
 <script>
@@ -49,3 +51,19 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+// brand
+.brand {
+  margin-top: 3.5rem;
+  &__title {
+    margin-bottom: 1.5rem;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(144px, 207px));
+    grid-gap: 1rem;
+    width: 100%;
+  }
+}
+</style>

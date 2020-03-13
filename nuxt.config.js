@@ -38,7 +38,7 @@ export default {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+   // '@nuxtjs/eslint-module'
   ],
   /*
    ** Nuxt.js modules
@@ -46,15 +46,18 @@ export default {
   modules: [
     '@nuxtjs/style-resources',
     '@nuxtjs/axios',
+    '@nuxtjs/auth',
     '@nuxtjs/pwa',
-    '@nuxtjs/eslint-module',
+    //'@nuxtjs/eslint-module',
     ['@nuxtjs/bootstrap-vue', { css: false }]
   ],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: {},
+  axios: {
+    baseURL: '.env.API_URL'
+  },
   /*
    ** Build configuration
    */
@@ -70,5 +73,34 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) { }
-  }
+  },
+  auth: {
+    strategies: {
+        local: {
+            endpoints: {
+                login: { 
+                    url: '/login', 
+                    method: 'post',
+                    withCredentials: true, 
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest',
+                        'Content-Type': 'application/json'
+                    } 
+                },
+                user: { 
+                    url: '/api/user', 
+                    method: 'get', 
+                    propertyName: false,
+                                        withCredentials: true, 
+                            headers: {
+                            'X-Requested-With': 'XMLHttpRequest',
+                            'Content-Type': 'application/json'
+                            }
+                }
+            },
+            tokenRequired: false,
+            tokenType: false
+        }
+    }
+},
 }

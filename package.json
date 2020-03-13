@@ -13,6 +13,7 @@
     "svg": "vsvg -s ./static/assets/img/icon -t ./static/assets/img/icon/bundle"
   },
   "dependencies": {
+    "@nuxtjs/auth": "^4.8.5",
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/bootstrap-vue": "^2.0.4",
     "@nuxtjs/bulma": "^1.2.1",
