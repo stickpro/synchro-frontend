@@ -68,6 +68,9 @@ a {
     align-content: center;
     height: 48px;
     margin-right: 3.5rem;
+    .nuxt-link {
+      display: flex;
+    }
   }
   &__top {
     display: flex;
