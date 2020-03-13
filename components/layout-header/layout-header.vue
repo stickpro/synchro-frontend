@@ -5,7 +5,9 @@
         <div class="header__top">
           <div class="header__top-section">
             <div class="header__top-item header__logo">
-              <img src="@/assets/img/logo.svg" alt />
+              <nuxt-link to="/">
+                <img src="@/assets/img/logo.svg" alt />
+              </nuxt-link>
             </div>
             <ul v-if="menuTop" class="header__top-item header__top-item-menu">
               <li v-for="item in menuTop">
@@ -27,7 +29,9 @@
               <img src="@/assets/img/icon/cart.svg" alt />
             </div>
             <div class="header__top-item">
-              <img src="@/assets/img/icon/user.svg" alt />
+              <nuxt-link to="/login">
+                <img src="@/assets/img/icon/user.svg" alt />
+              </nuxt-link>
             </div>
           </div>
         </div>

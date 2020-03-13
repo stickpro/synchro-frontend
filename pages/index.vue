@@ -30,9 +30,7 @@
   <section class="futured-product">
     <FuturedProduct />
   </section>
-  <section class="brand">
     <Brand />
-  </section>
   <section class="html">
     <HtmlBlock :html="htmlData" />
   </section>
