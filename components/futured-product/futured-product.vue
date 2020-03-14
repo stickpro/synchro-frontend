@@ -9,7 +9,7 @@
             <div class="card__info">
               <a :href="product.href">
                 <div class="card__image">
-                  <img :src="product.img" alt />
+                  <img :data-src="product.img" src="~assets/img/null.png" alt class="lazyload" />
                 </div>
                 <div class="card__name">{{ product.name }}</div>
               </a>

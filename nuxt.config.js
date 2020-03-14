@@ -32,7 +32,8 @@ export default {
    */
   plugins: [
     { src: '@/plugins/vue-svg-icon', mode: 'true' },
-    { src: '@/plugins/swiper.js', ssr: true, mode: 'client' },],
+    { src: '@/plugins/swiper.js', ssr: true, mode: 'client' },
+    { src: '~/plugins/lazysizes.client.js' }],
   /*
    ** Nuxt.js dev-modules
    */
@@ -72,7 +73,12 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) { }
+    extend (config, { isDev, isClient, loaders: { vue } }) {
+      if (isClient) {
+        vue.transformAssetUrls.img = ['data-src', 'src']
+        vue.transformAssetUrls.source = ['data-srcset', 'srcset']
+      }
+    }
   },
   auth: {
     strategies: {
