@@ -46,6 +46,7 @@ import Brand from '@/components/brand/brand.vue'
 import HtmlBlock from '@/components/htmlBlock/htmlBlock.vue'
 
 export default {
+  transition: "intro",
   components: { Slider, FuturedProduct, Brand, HtmlBlock },
   data() {
     return {
