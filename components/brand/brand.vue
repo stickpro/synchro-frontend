@@ -7,7 +7,7 @@
         <section class="brand__item" v-for="brand in brands" v-if="brands">
           <div class="brand__item-info">
             <a :href="brand.link" class="brand__item-link">
-              <img :src="brand.img" alt />
+              <img :data-src="brand.img" src="~assets/img/null.png"  alt class="lazyload" />
             </a>
           </div>
         </section>
@@ -58,6 +58,13 @@ export default {
   margin-top: 3.5rem;
   &__title {
     margin-bottom: 1.5rem;
+  }
+  &__item {
+    &-info {
+      width: 208px;
+      height: 90.5px;
+      background: #fff;
+    }
   }
   &__grid {
     display: grid;
