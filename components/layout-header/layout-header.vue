@@ -11,7 +11,7 @@
             </div>
             <ul v-if="menuTop" class="header__top-item header__top-item-menu">
               <li v-for="item in menuTop">
-                <a href="index.href">{{ item.title }}</a>
+                <nuxt-link :to="item.href">{{ item.title }}</nuxt-link>
               </li>
             </ul>
           </div>
@@ -46,8 +46,8 @@ export default {
   data() {
     return {
       menuTop: [
-        { href: '#', title: 'Сотрудничество' },
-        { href: '#', title: 'О компании' },
+        { href: 'collaboration', title: 'Сотрудничество' },
+        { href: 'about', title: 'О компании' },
         { href: '#', title: 'Доставка' },
         { href: '#', title: 'Ремонт' },
         { href: '#', title: 'Новости' },
