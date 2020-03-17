@@ -39,6 +39,16 @@ a {
   font-weight: 500;
   line-height: 2rem;
 }
+.sub-title {
+  font-weight: 500;
+  line-height: 19px;
+  font-size: 1rem;
+}
+.normal-text {
+  font-weight: 300;
+  line-height: 24px;
+  font-size: 1rem;
+}
 // BUTTON
 .btn-default {
   background: $blk;
@@ -59,7 +69,16 @@ a {
   color: $yel;
   font-weight: 500;
 }
-
+// helper
+.list-circle {
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 1px;
+  margin-top: 9px;
+  background-color: $yel;
+}
 // HEADER
 .header {
   background-color: $blk;
@@ -82,6 +101,12 @@ a {
     }
     &-item {
       font-size: $fs14;
+      a {
+        &:focus,
+        &:hover {
+          color: $gray;
+        }
+      }
       &-menu {
         display: flex;
         li {
@@ -225,7 +250,6 @@ a {
     color: $wht;
     font-size: $fs12;
     font-weight: normal;
-
   }
 }
 // MENU
@@ -492,7 +516,7 @@ a {
   }
 }
 
-//page transition 
+//page transition
 $t-duration: 800ms;
 $t-delay: 300ms;
 
@@ -573,5 +597,64 @@ $t-delay: 300ms;
   &::after {
     transform: scaleX(0);
     transform-origin: right;
+  }
+}
+// coloboration
+.coloboration {
+  padding-top: 1.6rem;
+  margin-bottom: 9rem;
+  &__title {
+    padding-bottom: 1.6rem;
+  }
+  &__text {
+    padding-bottom: 2rem;
+  }
+  &__sub-title {
+    padding-bottom: 13px;
+  }
+  &__list {
+    font-weight: 300;
+    line-height: 24px;
+    padding-bottom: 33px;
+    li {
+      margin-left: 1rem;
+    }
+  }
+}
+// about
+.about {
+  padding-top: 1.6rem;
+  margin-bottom: 9rem;
+  &__title {
+    padding-bottom: 1.6rem;
+  }
+  &__sub-title {
+    padding-bottom: 13px;
+  }
+  &__text {
+    padding-bottom: 2rem;
+    padding-top: 25px;
+  }
+}
+.certificate {
+  padding-top: 1.6rem;
+  margin-bottom: 9rem;
+  &__title {
+    margin-bottom: 26px;
+  }
+  &__image {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &-item {
+      width: calc(50% - 0.5rem);
+      margin-bottom: 1rem;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }
